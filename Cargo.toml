@@ -1,0 +1,35 @@
+[package]
+name = "todo-with-auth"
+version = "0.2.0"
+authors = ["rikusen0335 <rikusen0335@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "lib"
+path = "src/lib.rs"
+
+[dependencies]
+# misc
+futures = "0.3.12"
+dotenv = "0.15.0"
+chrono = { version = "0.4.19", features = ["serde"] }
+
+# web server
+actix-web = "3.3.2"
+actix-rt = "1.1.1"
+actix-cors = "0.5.4"
+env_logger = "0.8.2"
+
+# database
+diesel = { version = "1.4.5", features = ["postgres", "r2d2", "chrono"] }
+diesel_migrations = "1.4.0"
+
+# graphql
+juniper = "0.15.3"
+serde = "1.0.123"
+serde_derive = "1.0.123"
+serde_json = "1.0.61"
+
+[dev-dependencies]
+actix-http = "2.2.0"
+serial_test = "*"
