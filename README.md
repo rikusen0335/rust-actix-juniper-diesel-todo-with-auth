@@ -1,7 +1,10 @@
 # Overview
 
-# Please note: This project is based on https://github.com/mihai-dinculescu/rust-graphql-actix-juniper-diesel-example by
+## Please note:
+This project is based on https://github.com/mihai-dinculescu/rust-graphql-actix-juniper-diesel-example by
 Mihai Dinculescu. Thank you so much to show your awesome work!
+
+---
 
 [![CI][ci_badge]][ci]
 [![codecov][codecov_badge]][codecov]
